@@ -24,7 +24,7 @@ ZooKeeper是一种为分布式应用所设计的高可用、高性能的一致�
 ## 四. ZooKeeper数据模型
 ### 4.1 ZooKeeper数据模型Znode
 ZooKeeper拥有一个层次的命名空间，这个和标准的文件系统非常相似，如图4.1所示  
-图4.1 ZooKeeper数据模型与文件系统目录树
+图4.1 ZooKeeper数据模型与文件系统目录树  
 ![4.1](images/4.1.png)![4.2](images/4.2.png)  
 从图中我们可以看到ZooKeeper的数据类型，在结构上和标准文件系统非常相似，都是采用这种树形层次结构，ZooKeeper树中的每个节点被称为--Znode。和文件系统的目录树一样，ZooKeeper树中的每个节点都可以拥有子节点。但也有不同之处：  
 1. 引用方式
