@@ -1,5 +1,6 @@
-package com.sinosun;
+package com.sinosun.demo2;
 
+import com.sinosun.demo2.ConnectionWatcher;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.Watcher;

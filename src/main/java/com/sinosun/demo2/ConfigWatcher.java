@@ -1,4 +1,4 @@
-package com.sinosun;
+package com.sinosun.demo2;
 
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
@@ -35,7 +35,7 @@ public class ConfigWatcher implements Watcher {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
-        ConfigWatcher configWatcher = new ConfigWatcher("192.168.133.128:2181");
+        ConfigWatcher configWatcher = new ConfigWatcher("192.168.133.129:2181");
         configWatcher.displayConfig();
         Thread.sleep(Long.MAX_VALUE);
     }

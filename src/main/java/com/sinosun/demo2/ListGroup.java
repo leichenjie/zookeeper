@@ -1,4 +1,4 @@
-package com.sinosun;
+package com.sinosun.demo2;
 
 import org.apache.zookeeper.KeeperException;
 
@@ -15,7 +15,7 @@ public class ListGroup extends ConnectionWatcher {
                 System.exit(1);
             }
             for (String child:children) {
-                System.out.printf("Group %s does not exist \n",groupName);
+                System.out.printf(child);
             }
         } catch (KeeperException.NoNodeException e) {
             System.out.printf("Group %s does not exist \n",groupName);
