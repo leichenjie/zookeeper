@@ -6,7 +6,7 @@ import java.util.concurrent.CountDownLatch;
 
 public class ZookeeperBase {
     /** zookeeper地址 */
-    static final String CONNECT_ADDR = "192.168.133.128:2181";
+    static final String CONNECT_ADDR = "192.168.133.129:2181";
     /** session超时时间 */
     static final int SESSION_OUTTIME = 2000;
     /** 信号量 */

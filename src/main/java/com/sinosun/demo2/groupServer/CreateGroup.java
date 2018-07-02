@@ -1,4 +1,4 @@
-package com.sinosun.demo2;
+package com.sinosun.demo2.groupServer;
 
 import org.apache.zookeeper.*;
 

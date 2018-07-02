@@ -1,20 +1,18 @@
-package com.sinosun.demo2;
+package com.sinosun.demo2.configServer;
 
-import com.sinosun.demo2.ActiveKeyValueStore;
-import com.sinosun.demo2.ConfigUpdater;
 import org.apache.zookeeper.KeeperException;
 
 import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class ResilientConfigUpdater {
+public class ConfigUpdater {
     public static final String PATH = "/config";
 
     private ActiveKeyValueStore store;
     private Random random = new Random();
 
-    public ResilientConfigUpdater(String hosts) throws IOException, InterruptedException {
+    public ConfigUpdater(String hosts) throws IOException, InterruptedException {
         store = new ActiveKeyValueStore();
         store.connect(hosts);
     }
@@ -29,17 +27,7 @@ public class ResilientConfigUpdater {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
-        while (true) {
-            try {
-                ConfigUpdater configUpdater = new ConfigUpdater("192.168.133.129:2181");
-                configUpdater.run();
-            }catch (KeeperException.SessionExpiredException e) {
-
-            }catch (KeeperException e) {
-                e.printStackTrace();
-                break;
-            }
-        }
-
+        ConfigUpdater configUpdater = new ConfigUpdater("192.168.133.129:2181");
+        configUpdater.run();
     }
 }

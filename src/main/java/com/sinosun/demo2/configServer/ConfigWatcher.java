@@ -1,4 +1,4 @@
-package com.sinosun.demo2;
+package com.sinosun.demo2.configServer;
 
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;

@@ -1,4 +1,4 @@
-package com.sinosun.demo2;
+package com.sinosun.demo2.configServer;
 
 import com.sinosun.demo2.ConnectionWatcher;
 import org.apache.zookeeper.CreateMode;
